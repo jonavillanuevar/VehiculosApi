@@ -1,0 +1,26 @@
+@VehiculosApi_HostAddress = http://localhost:5152
+
+GET {{VehiculosApi_HostAddress}}/api/vehiculos/
+Accept: application/json
+
+###
+
+GET {{VehiculosApi_HostAddress}}/api/vehiculos/1
+
+###
+
+GET {{VehiculosApi_HostAddress}}/api/vehiculos/abc
+
+###
+
+POST {{VehiculosApi_HostAddress}}/api/vehiculos
+Content-Type: application/json
+
+{
+  "marca": "Geely",
+  "modelo": "Monjaro",
+  "anio": 2027,
+  "precio": 32000.00,
+  "disponible": true
+}
+
